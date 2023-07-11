@@ -23,19 +23,19 @@ function Left3({handleInputChange}) {
             <div style={{ width: '80%'}}>
                 <p style={{ display: "inline" }}>6. 계약금액 </p>
                 <p onClick={handleClick} style={{cursor: "pointer", color: "blue", fontSize: "8px", display: "inline"}}>{isToggleOn ? " *해석닫기" : " *해석보기"}</p>
-                <InputBox type="number" id="payment" value={0} onChange={OnChange} />
+                <InputBox type="number" id="payment" onChange={OnChange} />
             </div>
             <div style={{ width: '80%'}}>
                 <p>①계약금</p>
-                <InputBox type="number" id="dawn" value={0} onChange={OnChange} />
+                <InputBox type="number" id="dawn" onChange={OnChange} />
             </div>
             <div style={{ width: '80%'}}>
                 <p>②중도금</p>
-                <InputBox type="number" id="interim" value={0} onChange={OnChange} />
+                <InputBox type="number" id="interim" onChange={OnChange} />
             </div>
             <div style={{ width: '80%'}}>
                 <p>③잔금</p>
-                <InputBox type="number" id="balance" value={0} onChange={OnChange} />
+                <InputBox type="number" id="balance" onChange={OnChange} />
             </div>
             <div>
                 {isToggleOn && 
